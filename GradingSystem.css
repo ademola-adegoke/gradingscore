@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-image: url(./Foto/IMG_20221130_130947.jpg); */
+    background-size: cover;
+}
+body{
+    height: 633px;
+}
+.Grading{
+    width: 28%;
+    padding: 30px;
+    height: 180px;
+    border-radius: 5px;
+    margin: 250px auto;
+    background-color: white;
+    box-shadow: rgb(60, 57, 57) 0px 15px 10px -2px;
+    animation-name: Grading;
+    animation-duration: 5s;
+}
+@keyframes Grading {
+    0%{
+        transform: translate(-100px);
+    }
+    100%{
+        transform: translate(100px);
+    }
+}
+.Grading div{
+    border: 1px solid red;
+    width: 90%;
+    text-align: center;
+    height: 40px;
+    padding: 8px;
+    border-radius: 10px;
+    margin-top: 10px;
+    transition: background-color 2s, transform 1s linear;
+}
+.Grading div:hover{
+    background-color: lightskyblue;
+    transform: rotate(360deg);
+}
+
+.Grading input{
+    border: 1px solid pink ;
+    padding: 10px;
+}
+.Grading button{
+    border: 1px solid pink ;
+    padding: 10px;  
+    border-radius: 5px;
+    width: 70px;
+    /* background-color: blue; */
+}
+.Grading h1{
+    margin-left: 25px;
+    padding: 10px ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
